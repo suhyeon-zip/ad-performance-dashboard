@@ -1,0 +1,16 @@
+# 원본 데이터 (용량 크고 민감)
+data/raw/
+data/processed/
+data/exports/
+
+# 로그
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+*.xlsx
