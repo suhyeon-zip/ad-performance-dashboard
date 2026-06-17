@@ -995,7 +995,7 @@ with tab4:
         r=int(255*ratio); g=int(255*(1-ratio))
         return f"background-color:rgba({r},{g},80,0.4)"
 
-    st.dataframe(matrix_df.style.applymap(bg_gradient).format("₩{:,.0f}", na_rep="-"), use_container_width=True)
+    st.dataframe(matrix_df.style.map(bg_gradient).format("₩{:,.0f}", na_rep="-"), use_container_width=True)
     st.caption("⚠ 가입CPA 기준 최우수 조합(구글×회원가입)이 자동이체CPA 기준으로는 4.2배 비쌈")
 
     st.divider()
